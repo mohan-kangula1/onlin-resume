@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8"> 
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script type="text/javascript">
+            var app=angular.module("sample",[]);
+            app.controller("emp",["$scope",function(c){
+                c.Name="mohan";
+				c.salary=50000;
+            }]);
+        </script>
+    </head>
+    <body ng-app="sample">
+        <div ng-controller="emp">
+         Hello {{Name}} is your salory as{{salary}}
+         </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctyp html>
+<html>
+<head>
+    <title>About dom</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+    <body>
+        <div id="img-div" class="text-center">
+            <div class="container">
+        <img src="./img/google.png" width="300px" height="200px" id="myimg">
+            </div>
+            <button class="btn btn-primary" onclick="facebook();">Facebook</button>
+            <button class="btn btn-secondary" onclick="youtube();">Youtube</button>
+        </div>
+        <script>
+        function facebook(){
+            document.getElementById('myimg').setAttribute('src','./img/facebook.png');
+        }
+            function youtube(){
+            document.getElementById('myimg').setAttribute('src','./img/youtube.jpg');
+        }
+        </script>
+    </body>
+</html>

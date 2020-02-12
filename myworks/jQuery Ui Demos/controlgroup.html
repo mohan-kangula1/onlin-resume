@@ -1,0 +1,42 @@
+<!Doctype>
+<html lang="en">
+      <head meta charset="utf-8">
+       <title>Button Demos</title>
+       <link  href="jQuery-ui/jquery-ui.min.css" rel="stylesheet" text="text/css">
+	   <script src="jQuery-ui/external/jquery/jquery.js" type="text/javascript"></script>
+	    <script src="jQuery-ui/jquery-ui.min.js" type="text/javascript"></script>
+      </head>
+       <body>
+	   <form name="frmDetails" id="frmDetails" action="#" method="post">
+	     <div id="controlgroup">
+		 <label for="txtStudentName" class="ui-controlgroup-item">StudentName</label>
+		 <input type="text" name="txtStudentName" id="txtStudentName" class="ui-controlgroup-item"/><br>
+		 <label for="slctQual" class="ui-controlgroup-item">Qualification</label>
+		   <select name="slctQual" id="slctQual" class="ui-controlgroup-item">
+		     <option value="u">UG</option>
+			 <option value="p">PG</option><br><br>
+		   </select><br>
+		   <label for="rdbGender" class="ui-controlgroup-item">Gender</label>
+		   <label for="rdbMale" class="ui-controlgroup-item">Male</label>
+		   <input type="radio" name="rdbGender" id="rdbMale" class="ui-controlgroup-item" value="m" checked\>
+		   <label for="rdbFemale" class="ui-controlgroup-item">Male</label>
+		   <input type="radio" name="rdbGender" id="rdbFemale" class="ui-controlgroup-item" value="f"\><br>
+		    <label for="chkHobbies" class="ui-controlgroup-item">Hobbies</label>
+			<label for="chkmusic" class="ui-controlgroup-item">Music</label>
+			<input type="checkbox" name="chkmusic" id="chkmusic" class="ui-controlgroup-item" value="m"\>
+			<label for="chkplaying" class="ui-controlgroup-item">Playing</label>
+			<input type="checkbox" name="chkplaying" id="chkplaying" class="ui-controlgroup-item" value="m"\>
+			<label for="chksinging" class="ui-controlgroup-item">Singing</label>
+			<input type="checkbox" name="chksinging" id="chksinging" class="ui-controlgroup-item" value="s"\><br>
+			<label for="dateofjoining" class="ui-controlgroup-item">Date of Joining</label>
+			<input type="text" name="date of joining" id="dateOfJoining" class="ui-controlgroup-item" value=""><br>
+			<input type="submit" class="ui-controlgroup-item" value="SUBMIT">
+		 </div>
+		 </form>
+	   <script type="text/javascript">
+	     $("#dateOfJoining").datepicker();
+         $("#controlgroup").controlgroup({direction:"vertical"}); 
+		  	  
+	   </script>
+        </body>
+</html>

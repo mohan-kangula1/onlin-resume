@@ -1,0 +1,33 @@
+<!Doctype>
+<html lang="en">
+      <head meta charset="utf-8">
+       <title>CheckboxRadio Demos</title>
+       <link  href="jQuery-ui/jquery-ui.min.css" rel="stylesheet" text="text/css">
+	   <script src="jQuery-ui/external/jquery/jquery.js" type="text/javascript"></script>
+	    <script src="jQuery-ui/jquery-ui.min.js" type="text/javascript"></script>
+      </head>
+       <body>
+	     <fieldset>
+		      <legend>Select Gender</legend>
+		      <label for=rdbMale>Male</label>
+			  <input type="radio" name="rdbGender" id="rdbMale" value="m" >
+			  <label for=rdbFemale>Female</label>
+			  <input type="radio" name="rdbGender" id="rdbFemale" value="f" >
+		 </fieldset><br><br>
+		 <fieldset>
+		    <legend>Select Hobbies</legend>
+		 <label for="chkmusic">Music</label>
+		 <input type="checkbox" name="chkmusic" id="chkmusic"\>
+		 		 <label for="chkgaming">Gaming</label>
+		 <input type="checkbox" name="chkgaming" id="chkgaming"\>
+		 		 <label for="chkplaying">Playing</label>
+		 <input type="checkbox" name="chkplaying" id="chkplaying"\>
+		 		 <label for="chksinging">Singing</label>
+		 <input type="checkbox" name="chksinging" id="chksinging"\>
+		 </fieldset>
+	   <script type="text/javascript">
+          $("input[type=radio]").checkboxradio();
+		  $("input[type=checkbox]").checkboxradio();
+	   </script>
+        </body>
+</html>

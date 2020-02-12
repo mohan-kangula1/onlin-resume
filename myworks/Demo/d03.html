@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="d03.js"></script>
+</head>
+<body ng-app="app">
+<div ng-controller="emp">
+  Value of a is {{a}}
+  Change the value
+  <input type="text" ng-model="a"/><br>
+  Value of b is {{b}}
+  Change the value
+  <input type="text" ng-model="b"/>
+ <hr>
+   Sum={{sum}}<br>
+  <button ng-click="doSum()">
+  Calculate</button>
+</div>
+</html>
